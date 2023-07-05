@@ -90,20 +90,20 @@ function Validation() {
     return true;
   };
 
-  this.kiemTraNgay = function (value, errorID, mess) {
-    var splitDate = value.split("/");
-    var parsedDate = new Date();
-    if (
-      parsedDate.getMonth() == splitDate[0] - 1 &&
-      parsedDate.getDate() == splitDate[1] &&
-      parsedDate.getFullYear() == splitDate[2]
-    ) {
-      document.getElementById(errorID).innerHTML = "";
-      document.getElementById(errorID).style.display = "none";
-      return true;
-    }
-    document.getElementById(errorID).innerHTML = mess;
-    document.getElementById(errorID).style.display = "block";
-    return false;
-  };
+  // this.kiemTraNgay = function (value, errorID, mess) {
+  //   var splitDate = value.split("/");
+  //   var parsedDate = new Date();
+  //   if (
+  //     parsedDate.getMonth() == splitDate[0] - 1 &&
+  //     parsedDate.getDate() == splitDate[1] &&
+  //     parsedDate.getFullYear() == splitDate[2]
+  //   ) {
+  //     document.getElementById(errorID).innerHTML = "";
+  //     document.getElementById(errorID).style.display = "none";
+  //     return true;
+  //   }
+  //   document.getElementById(errorID).innerHTML = mess;
+  //   document.getElementById(errorID).style.display = "block";
+  //   return false;
+  // };
 }
